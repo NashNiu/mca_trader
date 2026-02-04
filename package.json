@@ -5,9 +5,11 @@
     "build": "vite build",
     "dev": "vite --host",
     "lint": "pnpm run lint:js && pnpm run lint:style",
-    "lint:fix": "pnpm run lint:js -- --fix && pnpm run lint:style -- --fix",
+    "lint:fix": "pnpm run lint:js:fix && pnpm run lint:style:fix",
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore src",
+    "lint:js:fix": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
     "lint:style": "stylelint **/*.{vue,css} --ignore-path .gitignore",
+    "lint:style:fix": "stylelint **/*.{vue,css} --ignore-path .gitignore --fix",
     "serve": "vite preview"
   },
   "dependencies": {

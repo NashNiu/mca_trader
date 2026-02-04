@@ -13,8 +13,8 @@ const props = defineProps({
     default: 'Home',
   },
 });
-const offsetLeft = ref(0);
-const initPosition = ref(0);
+const offsetLeft = ref(49);
+const initPosition = ref(49);
 const activeLan = ref('zh');
 const tabs = [
   {
@@ -110,7 +110,7 @@ onMounted(() => {
             :style="{left: `${offsetLeft}px`}"
           >
             <div class="h-5 w-[3px] bg-green-400" />
-            <div class="h-[5px] w-[5px] translate-x-[-1px] translate-y-[-1px] rounded-full  bg-green-400" />
+            <div class="size-[5px] -translate-x-px -translate-y-px rounded-full bg-green-400" />
           </div>
           <div />
         </div>

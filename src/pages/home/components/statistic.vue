@@ -3,22 +3,22 @@
     class="relative mt-8 h-[460px] w-full"
     :style="{backgroundImage: `url(${statisticPng})`}"
   >
-    <div class=" absolute h-full w-full bg-slate-800 opacity-70" />
+    <div class=" absolute size-full bg-slate-800 opacity-70" />
     <div class="relative mx-auto flex h-full items-center justify-between xl:w-[1200px]">
       <div
         v-for="item in data"
         :key="item.id"
         class="group flex cursor-pointer items-center"
       >
-        <div class="flex h-[170px] w-[170px] items-center justify-center rounded-full bg-green-400 transition-all duration-300 group-hover:shadow-triple">
+        <div class="flex size-[170px] items-center justify-center rounded-full bg-green-400 transition-all duration-300 group-hover:shadow-triple">
           <img
             :src="item.img"
             alt=""
           >
         </div>
         <div
-          class="flex h-[242px] w-[242px] -translate-x-6 flex-col items-center justify-center
-        rounded-[14px] bg-slate-800 transition-all duration-300 group-hover:shadow-triple"
+          class="flex size-[242px] -translate-x-6 flex-col items-center justify-center rounded-[14px]
+        bg-slate-800 transition-all duration-300 group-hover:shadow-triple"
         >
           <span class="text-xl font-bold text-white">{{ item.data }}</span>
           <span class="mt-4 text-sm font-normal text-white">{{ item.desc }}</span>
