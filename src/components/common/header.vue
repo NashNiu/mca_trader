@@ -13,8 +13,8 @@ const props = defineProps({
     default: 'Home',
   },
 });
-const offsetLeft = ref(0);
-const initPosition = ref(0);
+const offsetLeft = ref(49);
+const initPosition = ref(49);
 const activeLan = ref('zh');
 const tabs = [
   {
