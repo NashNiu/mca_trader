@@ -3,7 +3,7 @@
     :right="50"
     class=" animate-jump"
   >
-    <div class="flex h-full w-full items-center justify-center rounded bg-green-400 font-extrabold text-white">
+    <div class="flex size-full items-center justify-center rounded bg-green-400 font-extrabold text-white">
       <img
         class="w-4"
         :src="upImg"

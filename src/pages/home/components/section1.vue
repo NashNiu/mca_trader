@@ -31,7 +31,7 @@
         :style="{filter:'drop-shadow(0px 0px 32px rgba(0, 0, 0, 0.099))'}"
         class="frameBox group h-80 xl:w-[24.2%]"
       >
-        <div class="absolute left-1/4 -top-12 z-10 flex h-20 w-20 items-center justify-center rounded-full bg-green-400 group-hover:animate-pulse1">
+        <div class="absolute -top-12 left-1/4 z-10 flex size-20 items-center justify-center rounded-full bg-green-400 group-hover:animate-pulse1">
           <img
             :src="item.img"
             alt=""
@@ -72,7 +72,7 @@
           @mouseleave="hoverWhyId=0"
         >
           <img
-            class="h-10 w-10"
+            class="size-10"
             :src="(item.id===activeWhyId||item.id === hoverWhyId)?item.activeImg:item.img"
             alt=""
           >
@@ -82,7 +82,7 @@
             v-html="item.title"
           />
           <div
-            class="absolute inset-x-0 top-full mx-auto h-0 w-0 border-x-[13px]  border-t-[14px] border-solid border-x-transparent border-t-green-400"
+            class="absolute inset-x-0 top-full mx-auto size-0 border-x-[13px] border-t-[14px]  border-solid border-x-transparent border-t-green-400"
             :class="item.id===activeWhyId?'block':'hidden'"
           />
         </div>
@@ -124,13 +124,13 @@
       <div class="mt-5 flex h-[456px] justify-between ">
         <div class="w-[717px] overflow-hidden rounded-xl">
           <div
-            class="h-full w-full transition-all duration-300"
+            class="size-full transition-all duration-300"
             :style="{transform: `translateY(-${productTransLateY}px)`}"
           >
             <div
               v-for="item in productList"
               :key="item.id"
-              class="relative h-full w-full"
+              class="relative size-full"
             >
               <img
                 :src="item.mainImg"

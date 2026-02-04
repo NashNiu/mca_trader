@@ -1,5 +1,5 @@
 <template>
-  <div class="mt-16 mb-20">
+  <div class="mb-20 mt-16">
     <!-- registerData -->
     <div class="text-center text-2xl font-bold text-blue-950">
       How to get started with MCA
